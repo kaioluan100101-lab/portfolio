@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO básico -->
-    <title>Contato</title>
+    <title>Contato | Kaio Oliveira</title>
     <meta name="description"
         content="Portfólio de Kaio Oliveira, Desenvolvedor Front-End em formação, apaixonado por tecnologia e desenvolvimento web com HTML5, CSS3 e JavaScript.">
     <meta name="keywords"
         content="Kaio Oliveira, desenvolvedor front-end, HTML5, CSS3, JavaScript, portfólio, desenvolvimento web">
     <meta name="author" content="Kaio Oliveira">
-    <link rel="canonical" href="https://marinalopes-dev.exemplo.com/index.html">
+    <link rel="canonical" href="https://kaioluan100101-lab.github.io/portfolio/contato.html">
 
     <!-- Open Graph / redes sociais -->
     <meta property="og:title" content="Kaio Oliveira | Desenvolvedor Front-End">
@@ -31,6 +31,34 @@
     <link rel="stylesheet" href="css/contato.css">
 </head>
 <body>
+<header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="logo"><span class="dot">●</span> kaio.dev </a>
+
+            <nav class="nav-tabs" id="nav-tabs" aria-label="Navegação principal">
+                <a href="index.html">index<span class="ext">.html</span></a>
+                <a href="sobre.html">sobre<span class="ext">.html</span></a>
+                <a href="projetos.html">projetos<span class="ext">.html</span></a>
+                <a href="contato.html" aria-current="page">contato<span class="ext">.html</span></a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Alternar tema claro/escuro" aria-pressed="false">
+                    <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+                    </svg>
+                    <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="4" />
+                        <path
+                            d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+                    </svg>
+                </button>
+                <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-tabs">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
     <main>
 
 <section class="contato">
@@ -48,22 +76,33 @@
 
         <div class="contato-box">
 
-            <form class="formulario">
+            <form class="formulario" id="contact-form" novalidate>
 
-                <div class="campo">
+                <div class="campo form-row">
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" placeholder="Digite seu nome">
+                    <input type="text" id="nome" name="name" placeholder="Digite seu nome" autocomplete="name">
+                    <span class="error-msg"></span>
                 </div>
 
-                <div class="campo">
+                <div class="campo form-row">
                     <label for="email">E-mail</label>
-                    <input type="email" id="email" placeholder="Digite seu e-mail">
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" autocomplete="email">
+                    <span class="error-msg"></span>
                 </div>
 
-                <div class="campo">
-                    <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" rows="6" placeholder="Escreva sua mensagem"></textarea>
+                <div class="campo form-row">
+                    <label for="assunto">Assunto</label>
+                    <input type="text" id="assunto" name="subject" placeholder="Sobre o que quer falar?">
+                    <span class="error-msg"></span>
                 </div>
+
+                <div class="campo form-row">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="message" rows="6" placeholder="Escreva sua mensagem"></textarea>
+                    <span class="error-msg"></span>
+                </div>
+
+                <div class="form-status" role="status" aria-live="polite"></div>
 
                 <button type="submit">Enviar Mensagem</button>
 
@@ -82,14 +121,14 @@
 
     <p>
         <strong>💻 GitHub:</strong><br>
-        <a href="https://github.com/kaioluan100101-lab" target="_blank">
+        <a href="https://github.com/kaioluan100101-lab" target="_blank" rel="noopener">
             github.com/kaioluan100101
         </a>
     </p>
 
     <p>
         <strong>💼 LinkedIn:</strong><br>
-        <a href="https://www.linkedin.com/in/kaio-luan-8b5812176/" target="_blank">
+        <a href="https://www.linkedin.com/in/kaio-luan-8b5812176/" target="_blank" rel="noopener">
             linkedin.com/in/kaio-luan-8b5812176
         </a>
     </p>
@@ -118,5 +157,6 @@
             <p>&copy; 2026 Kaio Oliveira — Desenvolvido com HTML5, CSS3 &amp; JavaScript.</p>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

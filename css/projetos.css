@@ -64,6 +64,61 @@
     font-weight:600;
 }
 
+
+/* ---- Links dos cards (card inteiro clicável) ---- */
+.projeto-card{
+    position:relative;
+    cursor:pointer;
+}
+
+.projeto-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:25px;
+}
+
+.projeto-links a{
+    display:inline-block;
+    padding:10px 18px;
+    border-radius:8px;
+    font-weight:700;
+    font-size:.95rem;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.projeto-links a.ver{
+    background:#fff;
+    color:#0d1117;
+}
+
+.projeto-links a.ver:hover{
+    background:#3b82f6;
+    color:#fff;
+}
+
+/* faz o link "Ver projeto" cobrir o card inteiro */
+.projeto-links a.ver::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:15px;
+}
+
+/* botão GitHub fica por cima e continua clicável separadamente */
+.projeto-links a.repo{
+    position:relative;
+    z-index:2;
+    border:1px solid #8b949e;
+    color:#c9d1d9;
+}
+
+.projeto-links a.repo:hover{
+    border-color:#3b82f6;
+    color:#3b82f6;
+}
+
 @media(max-width:768px){
 
     .titulo-projetos h1{
