@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -5,46 +6,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO básico -->
     <title>Projetos | Kaio Oliveira</title>
 
     <meta name="description"
         content="Projetos de Kaio Oliveira, Desenvolvedor Front-End em formação, utilizando HTML5, CSS3 e JavaScript.">
 
     <meta name="keywords"
-        content="Kaio Oliveira, projetos, desenvolvedor front-end, HTML5, CSS3, JavaScript, portfólio">
+        content="Kaio Oliveira, desenvolvedor front-end, HTML5, CSS3, JavaScript, portfólio">
 
     <meta name="author" content="Kaio Oliveira">
 
-    <link rel="canonical" href="https://kaioluan100101-lab.github.io/portfolio/projetos.html">
+    <link rel="canonical"
+        href="https://kaioluan100101-lab.github.io/portfolio/projetos.html">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Projetos | Kaio Oliveira">
-
-    <meta property="og:description"
-        content="Conheça os projetos desenvolvidos por Kaio Oliveira utilizando HTML5, CSS3 e JavaScript.">
-
-    <meta property="og:locale" content="pt_BR">
-
-    <!-- Favicon -->
     <link rel="icon" href="data:,">
 
-    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link
         href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Manrope:wght@400;500;700&display=swap"
         rel="stylesheet">
 
-    <!-- CSS -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/sobre.css" rel="stylesheet">
-    <link href="css/projetos.css" rel="stylesheet">
-    <link href="css/contato.css" rel="stylesheet">
+    <!-- IMPORTANTE: mesmo CSS principal do index -->
+    <link href="css/estilo.css" rel="stylesheet">
 
+    <link href="css/sobre.css" rel="stylesheet">
+
+    <link href="css/projetos.css" rel="stylesheet">
+
+    <link href="css/contato.css" rel="stylesheet">
 </head>
 
 <body>
+
+    <!-- MENU -->
+
+    <header class="site-header">
+
+        <div class="container nav-wrap">
+
+            <a href="index.html" class="logo">
+                <span class="dot">●</span> kaio.dev
+            </a>
+
+            <nav class="nav-tabs" id="nav-tabs" aria-label="Navegação principal">
+
+                <a href="index.html">
+                    index<span class="ext">.html</span>
+                </a>
+
+                <a href="sobre.html">
+                    sobre<span class="ext">.html</span>
+                </a>
+
+                <a href="projetos.html" aria-current="page">
+                    projetos<span class="ext">.html</span>
+                </a>
+
+                <a href="contato.html">
+                    contato<span class="ext">.html</span>
+                </a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <button class="theme-toggle"
+                    aria-label="Alternar tema claro/escuro"
+                    aria-pressed="false">
+
+                    <svg class="moon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2">
+
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+
+                    </svg>
+
+                    <svg class="sun"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2">
+
+                        <circle cx="12" cy="12" r="4" />
+
+                        <path
+                            d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l1.41 1.41" />
+
+                    </svg>
+
+                </button>
+
+                <button class="menu-btn"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                    aria-controls="nav-tabs">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
 
     <main>
 
@@ -52,12 +124,15 @@
 
             <div class="container">
 
-                <!-- TÍTULO -->
                 <div class="titulo-projetos">
 
-                    <p class="eyebrow">meus trabalhos</p>
+                    <p class="eyebrow">
+                        meus trabalhos
+                    </p>
 
-                    <h1>Meus Projetos</h1>
+                    <h1>
+                        Meus Projetos
+                    </h1>
 
                     <p>
                         Estes são alguns dos projetos desenvolvidos durante meus estudos
@@ -67,14 +142,16 @@
                 </div>
 
 
-                <!-- CARDS DOS PROJETOS -->
                 <div class="cards-projetos">
 
 
                     <!-- TO-DO LIST -->
+
                     <article class="projeto-card">
 
-                        <h2>✅ Lista de Tarefas</h2>
+                        <h2>
+                            ✅ Lista de Tarefas
+                        </h2>
 
                         <p>
                             Aplicação de lista de tarefas desenvolvida com JavaScript,
@@ -88,19 +165,19 @@
 
                         <div class="projeto-links">
 
-                            <a href="https://kaioluan100101-lab.github.io/to-do-list/"
+                            <a
+                                href="https://kaioluan100101-lab.github.io/to-do-list/"
                                 target="_blank"
-                                rel="noopener noreferrer"
-                                class="btn-projeto">
+                                rel="noopener noreferrer">
 
                                 Ver projeto →
 
                             </a>
 
-                            <a href="https://github.com/kaioluan100101-lab/to-do-list"
+                            <a
+                                href="https://github.com/kaioluan100101-lab/to-do-list"
                                 target="_blank"
-                                rel="noopener noreferrer"
-                                class="btn-github">
+                                rel="noopener noreferrer">
 
                                 GitHub
 
@@ -112,9 +189,12 @@
 
 
                     <!-- CALCULADORA -->
+
                     <article class="projeto-card">
 
-                        <h2>🧮 Calculadora</h2>
+                        <h2>
+                            🧮 Calculadora
+                        </h2>
 
                         <p>
                             Calculadora web desenvolvida para praticar lógica de
@@ -128,19 +208,19 @@
 
                         <div class="projeto-links">
 
-                            <a href="https://kaioluan100101-lab.github.io/calculadora/"
+                            <a
+                                href="https://kaioluan100101-lab.github.io/calculadora/"
                                 target="_blank"
-                                rel="noopener noreferrer"
-                                class="btn-projeto">
+                                rel="noopener noreferrer">
 
                                 Ver projeto →
 
                             </a>
 
-                            <a href="https://github.com/kaioluan100101-lab/calculadora"
+                            <a
+                                href="https://github.com/kaioluan100101-lab/calculadora"
                                 target="_blank"
-                                rel="noopener noreferrer"
-                                class="btn-github">
+                                rel="noopener noreferrer">
 
                                 GitHub
 
@@ -152,9 +232,12 @@
 
 
                     <!-- SABOR & GRÃOS -->
+
                     <article class="projeto-card">
 
-                        <h2>☕ Sabor & Grãos</h2>
+                        <h2>
+                            ☕ Sabor &amp; Grãos
+                        </h2>
 
                         <p>
                             Website de cafeteria desenvolvido com foco em
@@ -168,19 +251,19 @@
 
                         <div class="projeto-links">
 
-                            <a href="https://kaioluan100101-lab.github.io/firstsite/"
+                            <a
+                                href="https://kaioluan100101-lab.github.io/firstsite/"
                                 target="_blank"
-                                rel="noopener noreferrer"
-                                class="btn-projeto">
+                                rel="noopener noreferrer">
 
                                 Ver projeto →
 
                             </a>
 
-                            <a href="https://github.com/kaioluan100101-lab"
+                            <a
+                                href="https://github.com/kaioluan100101-lab"
                                 target="_blank"
-                                rel="noopener noreferrer"
-                                class="btn-github">
+                                rel="noopener noreferrer">
 
                                 GitHub
 
@@ -200,14 +283,14 @@
     </main>
 
 
-    <!-- RODAPÉ -->
     <footer class="site-footer">
 
         <div class="container">
 
             <div class="footer-links">
 
-                <a href="https://github.com/kaioluan100101-lab"
+                <a
+                    href="https://github.com/kaioluan100101-lab"
                     target="_blank"
                     rel="noopener noreferrer">
 
@@ -215,7 +298,8 @@
 
                 </a>
 
-                <a href="https://www.linkedin.com/in/kaio-luan-8b5812176/"
+                <a
+                    href="https://www.linkedin.com/in/kaio-luan-8b5812176/"
                     target="_blank"
                     rel="noopener noreferrer">
 
@@ -224,9 +308,7 @@
                 </a>
 
                 <a href="mailto:kaioluan100101@gmail.com">
-
                     E-mail
-
                 </a>
 
             </div>
@@ -239,8 +321,10 @@
 
     </footer>
 
-    <!-- JavaScript -->
+
     <script src="js/script.js"></script>
 
 </body>
+
 </html>
+```
